@@ -1,0 +1,17 @@
+{
+	"category" : "SpellingServices",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"BinaryPath",
+		"CalloutDict",
+		"IgnoredWords",
+		"LanguageString" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "IspellSpellingInterface",
+	"pools" : [
+		 ],
+	"super" : "SpellingInterface",
+	"type" : "normal" }

@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"binaryPath" : "tfel 2/14/2012 14:19:06.895",
+		"binaryPath:" : "tfel 2/14/2012 14:18:59.542" },
+	"instance" : {
+		"apiLinuxLibc5Callout:" : "tfel 2/14/2012 14:13:04.362",
+		"apiLinuxLibc6Callout:" : "tfel 2/14/2012 14:13:13.257",
+		"apiMacOSXCallout:" : "tfel 2/14/2012 14:13:36.297",
+		"apiWindowsCallout:" : "tfel 2/14/2012 14:13:49.447",
+		"callout:" : "tfel 2/14/2012 14:14:45.396",
+		"calloutDict" : "tfel 2/14/2012 14:15:40.678",
+		"checkSpellingOf:startingAt:" : "tfel 2/14/2012 15:47:33.289",
+		"getGuesses:" : "tfel 2/14/2012 15:08:17.582",
+		"getIgnoredWords" : "tfel 2/14/2012 15:27:00.277",
+		"getLanguageString" : "tfel 2/14/2012 15:28:19.456",
+		"ignoredWordsForIspell" : "tfel 2/14/2012 15:42:00.801",
+		"linuxCallout:" : "tfel 2/14/2012 14:16:06.287",
+		"runIspellFor:" : "tfel 2/14/2012 15:41:54.911",
+		"setIgnoredWord:" : "tfel 2/14/2012 15:26:54.453",
+		"setIgnoredWords:" : "tfel 2/14/2012 15:26:23.955",
+		"setLanguageString:" : "tfel 2/14/2012 15:25:47.457",
+		"windowsCallout:" : "tfel 2/14/2012 14:16:34.954" } }

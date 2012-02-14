@@ -1,0 +1,4 @@
+language
+getLanguageString
+
+	self subclassResponsibility.
