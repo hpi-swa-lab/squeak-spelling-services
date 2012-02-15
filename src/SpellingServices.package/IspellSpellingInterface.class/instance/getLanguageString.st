@@ -1,4 +1,4 @@
 language
 getLanguageString
 
-	^ LanguageString ifNil: [LanguageString := 'en_US.UTF-8']
+	^ LanguageString ifNil: [LanguageString := 'american']

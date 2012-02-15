@@ -1,0 +1,4 @@
+ispell-tokens
+compound
+
+	^ $-
