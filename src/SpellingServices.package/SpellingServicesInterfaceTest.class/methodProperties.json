@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"setUp" : "JMM 6/15/2005 09:48",
-		"testAGuess" : "tfel 2/14/2012 15:02:08.659",
+		"testAGuess" : "ag 2/22/2012 14:25:45.34",
 		"testGetIgnoredWords" : "JMM 6/15/2005 09:53",
 		"testGetSetLanguageString" : "JMM 6/15/2005 12:24",
 		"testSetIgnoredWord" : "JMM 6/15/2005 16:56",

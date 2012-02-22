@@ -2,7 +2,7 @@ running
 testAGuess
 	| s chk |
 
-	s := spelling getGuesses: 'acklbar2'.
+	s := spelling getGuesses: Character alphabet.
 	self should: [s isEmpty].
 	s := spelling getGuesses: 'recieve'.
 	chk := s collect: [:e | e asString].

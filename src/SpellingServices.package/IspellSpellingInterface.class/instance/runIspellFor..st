@@ -5,13 +5,8 @@ runIspellFor: aString
 	FileDirectory default forceNewFileNamed: (self class name, '.txt') do: [:file |
 		file nextPutAll: self ignoredWordsForIspell; nextPutAll: aString; crlf;
 			close.
-		cmd := String streamContents: [:stream |
-			stream
-				nextPutAll: 'cat '; nextPutAll: file name; space;
-				nextPut: $|; space;
-				nextPut: $"; nextPutAll: self class binaryPath; nextPut: $";
-				nextPutAll: ' -a -d '; nextPutAll: self getLanguageString;
-				nextPutAll: ' -f '; nextPutAll: outputFileName].
+		cmd := self class commandTemplate format: {
+					file name. self class binaryPath. self getLanguageString. outputFileName}.
 		self callout: cmd.
 		FileDirectory default
 			fileNamed: outputFileName do: [:outputFile |
