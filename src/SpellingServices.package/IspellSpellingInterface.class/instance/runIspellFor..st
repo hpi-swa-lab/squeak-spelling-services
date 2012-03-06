@@ -11,7 +11,7 @@ runIspellFor: aString
 				nextPut: $|; space;
 				nextPut: $"; nextPutAll: self class binaryPath; nextPut: $";
 				nextPutAll: ' -a -d '; nextPutAll: self getLanguageString;
-				nextPutAll: ' -f '; nextPutAll: outputFileName].
+				nextPutAll: ' >> '; nextPutAll: outputFileName].
 		self callout: cmd.
 		FileDirectory default
 			fileNamed: outputFileName do: [:outputFile |
@@ -19,4 +19,5 @@ runIspellFor: aString
 				outputFile close];
 			deleteFileNamed: outputFileName;
 			deleteFileNamed: file localName].
+		
 	^ result lines allButFirst reject: #isEmpty

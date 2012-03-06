@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "JMM 6/15/2005 09:48",
-		"testAGuess" : "tfel 2/14/2012 15:02:08.659",
+		"setUp" : "PaulDeBruicker 3/6/2012 10:05",
+		"testAGuess" : "PaulDeBruicker 3/6/2012 10:52",
 		"testGetIgnoredWords" : "JMM 6/15/2005 09:53",
-		"testGetSetLanguageString" : "JMM 6/15/2005 12:24",
+		"testGetSetLanguageString" : "PaulDeBruicker 3/6/2012 10:20",
 		"testSetIgnoredWord" : "JMM 6/15/2005 16:56",
 		"testSetIgnoredWords" : "JMM 6/15/2005 16:38",
 		"testSpelling" : "JMM 6/15/2005 16:48",
