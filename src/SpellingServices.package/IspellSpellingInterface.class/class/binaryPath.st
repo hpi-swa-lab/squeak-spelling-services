@@ -4,4 +4,4 @@ binaryPath
 		category: 'Spelling Interface'
 		description: 'Set the path of the binary to be used for spelling. Has to be ispell compatible.'
 		type: #String>
-	^ BinaryPath ifNil: ['aspell']
+	^ BinaryPath ifNil: ['ispell']

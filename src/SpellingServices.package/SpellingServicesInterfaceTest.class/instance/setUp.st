@@ -1,3 +1,3 @@
 initialize-release
 setUp
-	spelling _ MacSpellingInterface new.
+	spelling := SpellingInterface new.
