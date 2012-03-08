@@ -6,4 +6,4 @@ ignoredWordsForIspell
 			stream
 				nextPut: self ignoreToken;
 				nextPutAll: word;
-				crlf]]
+				nextPutAll: self class nl]]
