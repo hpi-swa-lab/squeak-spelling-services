@@ -1,0 +1,14 @@
+{
+	"category" : "SpellingServices",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SpellingInterface",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

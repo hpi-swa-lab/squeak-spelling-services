@@ -1,0 +1,14 @@
+{
+	"category" : "SpellingServices",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Tag" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MacSpellingInterface",
+	"pools" : [
+		 ],
+	"super" : "SpellingInterface",
+	"type" : "normal" }

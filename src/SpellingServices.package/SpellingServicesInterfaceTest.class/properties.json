@@ -1,0 +1,14 @@
+{
+	"category" : "SpellingServices-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "JMM 6/15/2005 16:53",
+	"instvars" : [
+		"spelling" ],
+	"name" : "SpellingServicesInterfaceTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
