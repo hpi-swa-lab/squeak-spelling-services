@@ -1,0 +1,14 @@
+{
+	"category" : "SpellingServices-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MacSpellingServicesInterfaceTest",
+	"pools" : [
+		 ],
+	"super" : "SpellingServicesInterfaceTest",
+	"type" : "normal" }

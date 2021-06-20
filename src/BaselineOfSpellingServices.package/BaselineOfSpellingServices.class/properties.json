@@ -1,5 +1,5 @@
 {
-	"category" : "SpellingServices-Test",
+	"category" : "BaselineOfSpellingServices",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "MacSpellingServicesInterfaceTest",
+	"name" : "BaselineOfSpellingServices",
 	"pools" : [
 		 ],
-	"super" : "SpellingServicesInterfaceTest",
+	"super" : "BaselineOf",
 	"type" : "normal" }

@@ -1,3 +1,5 @@
 OrderedDictionary {
-	'src/SpellingServices.package' : #SquotCypressCodeSerializer
+	'src/SpellingServices-Core.package' : #SquotCypressCodeSerializer,
+	'src/SpellingServices-Tests.package' : #SquotCypressCodeSerializer,
+	'src/BaselineOfSpellingServices.package' : #SquotCypressCodeSerializer
 }
