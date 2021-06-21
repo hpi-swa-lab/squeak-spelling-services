@@ -4,7 +4,7 @@ SmalltalkCISpec {
 			#baseline : 'SpellingServices',
 			#directory : 'src',
 			#platforms : [ #squeak ],
-			#load : [ 'tests' ]
+			#load : [ #default ]
 		}
 	],
 	#testing : {
