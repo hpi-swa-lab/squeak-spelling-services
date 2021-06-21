@@ -4,8 +4,8 @@ ispellPath := [FileDirectory default
     do: [:file | file contents]]
         on: FileDoesNotExistException
         do: [].
-Transcript showln: 'ispellPath: '; show: ispellPath; flag: #debug.
+FileStream stdout nextPutAll: 'ispellPath: ' , ispellPath asString; cr; flag: #debug.
 ispellPath isEmptyOrNil ifTrue: [^ self].
 
-Transcript showln: ('Setting ispell binary path to "{1}".' format: {ispellPath}).
+FileStream stdout nextPutAll: ('Setting ispell binary path to "{1}".' format: {ispellPath}); cr.
 IspellSpellingInterface binaryPath: ispellPath.
