@@ -1,16 +1,26 @@
 private-callouts
 runIspellFor: aString
-	| cmd outputFileName result |
-	outputFileName := self class name, 'Output.txt'.
-	FileDirectory default forceNewFileNamed: (self class name, '.txt') do: [:file || outputFile |
-		file nextPutAll: self ignoredWordsForIspell; nextPutAll: aString; nextPutAll: self class nl;
-			close.
-		outputFile := FileDirectory default readOnlyFileNamed: outputFileName.
-		cmd := self class commandTemplate format: {
-					file name. self class binaryPath. self getLanguageString. outputFile name}.
+
+	| directory inputFileName outputFileName cmd result |
+	directory := FileDirectory default.
+	inputFileName := directory fullPathFor: self class name, 'Input.txt'.
+	outputFileName := directory fullPathFor: self class name, 'Output.txt'.
+	cmd := self class commandTemplate format: {
+		inputFileName. self class binaryPath. self getLanguageString. outputFileName}.
+	
+	result := [
+		FileStream forceNewFileNamed: inputFileName do: [:inputFile |
+			inputFile
+				nextPutAll: self ignoredWordsForIspell;
+				nextPutAll: aString;
+				nextPutAll: self class nl].
+		
 		self callout: cmd.
-		result := outputFile reopen; contents.
+		
+		FileStream readOnlyFileNamed: outputFileName do: [:outputFile |
+			outputFile contents]
+	] ensure: [
 		FileDirectory default
-			deleteFileNamed: outputFile localName;
-			deleteFileNamed: file localName].
+			deleteFileNamed: inputFileName;
+			deleteFileNamed: outputFileName].
 	^ result lines allButFirst reject: #isEmpty
