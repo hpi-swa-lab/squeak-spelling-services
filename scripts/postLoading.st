@@ -1,7 +1,8 @@
-| ispellPath |
-FileStream stdout nextPutAll: 'FileDirectory default: ' , FileDirectory default asString; cr; flag: #debug.
-FileStream stdout nextPutAll: 'FileDirectory default entries: ' , FileDirectory default entries asString; cr; flag: #debug.
-ispellPath := [FileDirectory default
+| directory ispellPath |
+directory := FileDirectory on: (SmalltalkCI getEnv: 'GITHUB_WORKSPACE').
+FileStream stdout nextPutAll: 'directory: ' , directory asString; cr; flag: #debug.
+FileStream stdout nextPutAll: 'directory entries: ' , directory entries asString; cr; flag: #debug.
+ispellPath := [directory
     readOnlyFileNamed: 'where-is-ispell.txt'
     do: [:file | file contents]]
         on: FileDoesNotExistException
