@@ -67,3 +67,7 @@ Access to `ispell` and `aspell` is realized through [`OSProcess`](http://wiki.sq
 
 Remarkably, there appear to be [issues](https://github.com/hpi-swa-lab/squeak-spelling-services/issues/2) with the SpellingPlugin in the present which will cause SpellingServices to fall back on `ispell` even on macOS.
 If you have a mac and feel like contributing to this repository, your help on investigating and debugging this issue will be appreciated!
+
+This repository is a port of the older SpellingServices which were previously hosted in [SwaSource](http://web.archive.org/web/20201030053215/http://www.hpi.uni-potsdam.de/hirschfeld/squeaksource/SpellingServices.html).
+You can also read up the original announcement on squeak-dev here: [Announcement: Spelling services
+](http://forum.world.st/Announcement-Spelling-services-td4450450.html)
