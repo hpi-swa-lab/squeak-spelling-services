@@ -4,7 +4,7 @@ FileStream stdout nextPutAll: 'directory: ' , directory asString; cr; flag: #deb
 FileStream stdout nextPutAll: 'directory entries: ' , directory entries asString; cr; flag: #debug.
 ispellPath := [directory
     readOnlyFileNamed: 'where-is-ispell.txt'
-    do: [:file | file contents]]
+    do: [:file | file contents withoutTrailingBlanks]]
         on: FileDoesNotExistException
         do: [].
 FileStream stdout nextPutAll: 'ispellPath: ' , ispellPath asString; cr; flag: #debug.
