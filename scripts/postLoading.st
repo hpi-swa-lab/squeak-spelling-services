@@ -11,7 +11,6 @@ FileStream stdout nextPutAll: 'ispellPath: ' , ispellPath asString; cr; flag: #d
 ispellPath isEmptyOrNil ifTrue: [^ self].
 
 self flag: #note. "ispellPath is relative unix path but we need an absolute Windows path, thus no simple FileDirectory >> #/ here."
-fullIspellPath := UnixFileDirectory splitName: ispellPath to: [:filePath :localName |
-	FileDirectory on: (directory fullPathFor: filePath) , directory slash , localName].
+fullIspellPath := (ispellPath findTokens: UnixFileDirectory pathNameDelimiter) inject: directory into: #/.
 FileStream stdout nextPutAll: ('Setting ispell binary path to "{1}".' format: {fullIspellPath}); cr.
 IspellSpellingInterface binaryPath: fullIspellPath.
