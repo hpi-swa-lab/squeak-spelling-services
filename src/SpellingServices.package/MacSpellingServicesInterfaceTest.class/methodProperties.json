@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testATag" : "PaulDeBruicker 3/6/2012 10:03" } }
+		"isMacOS" : "ct 6/21/2021 20:30:26",
+		"shouldPass" : "ct 6/21/2021 20:29:36",
+		"testATag" : "ct 6/21/2021 20:30:45" } }
