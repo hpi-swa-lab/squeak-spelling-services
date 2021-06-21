@@ -15,13 +15,9 @@ baseline: spec
 		
 		"packages"
 		spec
-			package: 'SpellingServices-Core' with: [
-				spec requires: 'FFI'];
-			package: 'SpellingServices-Tests' with: [
-				spec requires: 'SpellingServices-Core']].
+			package: 'SpellingServices' with: [
+				spec requires: 'FFI'].
 		
 		"groups"
 		spec
-			group: #core with: #('SpellingServices-Core');
-			group: #default with: #(core tests);
-			group: #tests with: #('SpellingServices-Tests').
+			group: #default with: #('SpellingServices')].
