@@ -1,7 +1,5 @@
 | directory ispellPath fullIspellPath |
 directory := FileDirectory on: (SmalltalkCI getEnv: 'GITHUB_WORKSPACE').
-FileStream stdout nextPutAll: 'directory: ' , directory asString; cr; flag: #debug.
-FileStream stdout nextPutAll: 'directory entries: ' , directory entries asString; cr; flag: #debug.
 ispellPath := [directory
     readOnlyFileNamed: 'where-is-ispell.txt'
     do: [:file | file contents withoutTrailingBlanks]]
