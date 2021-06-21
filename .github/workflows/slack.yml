@@ -8,7 +8,7 @@ on:
 jobs:
   notify:
     name: 📣 Notify community on failure
-    if: ${{  github.event_name == 'schedule' && github.event.workflow_run.conclusion == 'failure' }}
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     runs-on: ubuntu-latest
     steps:
       - uses: rtCamp/action-slack-notify@v2
