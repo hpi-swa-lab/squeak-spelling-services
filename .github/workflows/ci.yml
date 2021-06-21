@@ -15,8 +15,6 @@ jobs:
         smalltalk: [ Squeak64-trunk, Squeak64-5.3 ]
     name: ${{ matrix.smalltalk }} on ${{ matrix.os }}
     steps:
-      - run: faiiiiill  ## DEBUG
-        shell: bash
       - uses: actions/checkout@v2
       - run: ./scripts/setup-host.sh
         shell: bash
