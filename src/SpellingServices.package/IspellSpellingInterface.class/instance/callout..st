@@ -2,8 +2,11 @@ primitive-callouts
 callout: aCommand
 
 	| callout result |
-	(Smalltalk classNamed: 'OSProcess') ifNotNil: [:class |
-		result := class waitForCommand: aCommand.
+	(self environment classNamed: #OSProcess) ifNotNil: [:class | | command |
+		command := aCommand.
+		Smalltalk os platformName asLowercase = 'win32' ifTrue: [
+			command := 'cmd.exe /c ' , command].
+		result := class waitForCommand: command.
 		self assert: result succeeded description: 'Callout failed!'.
 		^ self].
 	
