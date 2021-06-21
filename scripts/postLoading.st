@@ -7,7 +7,6 @@ ispellPath := [directory
     do: [:file | file contents withoutTrailingBlanks]]
         on: FileDoesNotExistException
         do: [].
-FileStream stdout nextPutAll: 'ispellPath: ' , ispellPath asString; cr; flag: #debug.
 ispellPath isEmptyOrNil ifTrue: [^ self].
 
 self flag: #note. "ispellPath is relative unix path but we need an absolute Windows path, thus no simple FileDirectory >> #/ here."
