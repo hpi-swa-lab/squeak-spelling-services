@@ -5,4 +5,4 @@ windowsCallout: aCommand
 	escapedCommand := ((aCommand
 								copyReplaceAll: Character cr asString with: ' ')
 								copyReplaceAll: Character lf asString with: ' ').
-	self apiWindowsCallout: escapedCommand.
+	^ self apiWindowsCallout: escapedCommand
