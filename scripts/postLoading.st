@@ -1,4 +1,6 @@
 | ispellPath |
+FileStream stdout nextPutAll: 'FileDirectory default: ' , FileDirectory default asString; cr; flag: #debug.
+FileStream stdout nextPutAll: 'FileDirectory default entries: ' , FileDirectory default entries asString; cr; flag: #debug.
 ispellPath := [FileDirectory default
     readOnlyFileNamed: 'where-is-ispell.txt'
     do: [:file | file contents]]
