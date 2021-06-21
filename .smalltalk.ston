@@ -1,0 +1,15 @@
+SmalltalkCISpec {
+	#loading : [
+		SCIMetacelloLoadSpec {
+			#baseline : 'SpellingServices',
+			#directory : 'packages',
+			#platforms : [ #squeak ],
+			#load : [ 'tests' ]
+		}
+	],
+	#testing : {
+		#coverage : {
+			#packages : [ 'SpellingServices-Core' ]
+		}
+	}
+}
