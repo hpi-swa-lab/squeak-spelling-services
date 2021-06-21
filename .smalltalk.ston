@@ -1,4 +1,5 @@
 SmalltalkCISpec {
+	#postLoading : 'scripts/postLoading.st',
 	#loading : [
 		SCIMetacelloLoadSpec {
 			#baseline : 'SpellingServices',
