@@ -1,5 +1,8 @@
 SmalltalkCISpec {
-	#postLoading : 'scripts/postLoading.st',
+	#postLoading : [
+		'scripts/setupIspell.st',
+		'scripts/installOSProcess.st'
+	],
 	#loading : [
 		SCIMetacelloLoadSpec {
 			#baseline : 'SpellingServices',
