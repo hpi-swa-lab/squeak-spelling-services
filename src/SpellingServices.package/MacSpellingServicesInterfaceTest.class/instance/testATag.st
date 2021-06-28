@@ -1,4 +1,4 @@
-running
+tests
 testATag
 	| s |
 	self isMacOS ifFalse: [^ self].

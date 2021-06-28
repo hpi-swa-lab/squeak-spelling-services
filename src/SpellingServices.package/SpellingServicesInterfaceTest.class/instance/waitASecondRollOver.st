@@ -1,4 +1,4 @@
-utility
+support
 waitASecondRollOver
 	| now duration |
 	now := Time  millisecondClockValue.

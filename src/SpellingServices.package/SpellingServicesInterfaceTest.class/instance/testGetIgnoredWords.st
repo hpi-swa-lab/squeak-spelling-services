@@ -1,4 +1,4 @@
-running
+tests
 testGetIgnoredWords
 	| s |
 	s := spelling getIgnoredWords.

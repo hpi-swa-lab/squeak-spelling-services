@@ -1,4 +1,4 @@
-running
+tests
 testSetIgnoredWord
 	|  w1 i2 i2strings w2 w3 |
 

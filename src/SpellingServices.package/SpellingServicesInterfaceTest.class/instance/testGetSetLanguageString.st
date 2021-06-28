@@ -1,4 +1,4 @@
-running
+tests
 testGetSetLanguageString
 	| l remember |
 	l := spelling getLanguageString.

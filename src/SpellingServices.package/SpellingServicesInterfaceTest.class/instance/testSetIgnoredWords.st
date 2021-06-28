@@ -1,4 +1,4 @@
-running
+tests
 testSetIgnoredWords
 	|  w1 i i2 i3 i3strings i1strings i2strings |
 	i := spelling getIgnoredWords.

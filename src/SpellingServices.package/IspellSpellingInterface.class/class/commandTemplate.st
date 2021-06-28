@@ -1,4 +1,4 @@
-as yet unclassified
+templates
 commandTemplate
 
 	^ Smalltalk platformName asLowercase = 'win32'
