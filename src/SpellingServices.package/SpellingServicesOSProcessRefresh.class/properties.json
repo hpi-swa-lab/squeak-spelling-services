@@ -1,0 +1,14 @@
+{
+	"category" : "SpellingServices-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SpellingServicesOSProcessRefresh",
+	"pools" : [
+		 ],
+	"super" : "TestResource",
+	"type" : "normal" }
