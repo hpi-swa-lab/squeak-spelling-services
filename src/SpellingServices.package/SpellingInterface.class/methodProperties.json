@@ -2,7 +2,6 @@
 	"class" : {
 		"new" : "PaulDeBruicker 3/6/2012 10:02" },
 	"instance" : {
-		"byteStringToUTF16:" : "tfel 2/14/2012 13:59:56.304",
 		"checkSpellingOf:" : "ct 6/22/2021 00:00:57",
 		"checkSpellingOf:startingAt:" : "tfel 2/14/2012 14:03:44.403",
 		"getGuesses:" : "tfel 2/14/2012 14:00:23.17",
@@ -10,5 +9,4 @@
 		"getLanguageString" : "tfel 2/14/2012 14:03:25.881",
 		"setIgnoredWord:" : "tfel 2/14/2012 14:01:12.745",
 		"setIgnoredWords:" : "tfel 2/14/2012 15:20:59.32",
-		"setLanguageString:" : "tfel 2/14/2012 14:03:33.861",
-		"unknownToUTF16:" : "tfel 2/14/2012 13:59:51.129" } }
+		"setLanguageString:" : "tfel 2/14/2012 14:03:33.861" } }
